@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container-products-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+  
+  .container-products-grid h1 {
+    text-decoration: none;
+    margin-bottom: 20px;
+    border: 2px solid #F36D43;
+    border-radius: 20%;
+  }
+  
+  .products-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 25px;
+    margin-bottom: 80px;
+  }
+  
+  .product-container {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 1px 1px 5px rgba(183, 170, 170, 0.835); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  
+  .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    /* margin-bottom: 20px; */
+  }
+  
+  .product-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .product-name {
+    height: 40px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  .product-price {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .product-quantity-container {
+    margin-bottom: 17px;
+  }
+  
+  .product-spacer {
+    flex: 1;
+  }
+  
+  .add-to-cart-button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(24, 100, 100);
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.46);
+    color: #fafafa;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 2000px) {
+    .products-grid {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  
+  @media (max-width: 1600px) {
+    .products-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .products-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
