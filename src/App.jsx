@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './components/navbar/navbar.jsx';
 import Hero from './components/hero/Hero.jsx';
 import Product from './components/product/product.jsx';
-import Footer from './components/Footer/footer.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 const App = () => {
     const[ proAPI, setProAPI] = useState([]);
